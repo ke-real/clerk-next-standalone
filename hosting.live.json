@@ -1,0 +1,18 @@
+module.exports={
+    "apps": [
+      {
+        "name": "app",
+        "script": "server.js",
+        "env": {
+          "PORT": "3003",
+          "HOST": "127.0.0.1",
+          "NEXT_PUBLIC_CLERK_SIGN_IN_URL": "/sign-in",
+          "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_live_xxx",
+          "CLERK_SECRET_KEY": "sk_live_xxx",
+          
+        },
+        "max_restarts": 10,
+      }
+    ],
+    "exec_mode": "fork"
+  }
